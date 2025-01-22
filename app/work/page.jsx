@@ -23,13 +23,13 @@ const projects = [
   {
     num: "01",
     category: "frontend",
-    title: "project 1",
+    title: "BoomoTech software agency",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: "/assets/work/thumb1.png",
+      "BoomoTech: BoomoTech specializes in creating innovative websites, managing social media, and optimizing online presence through Google Ads and other digital services. Our mission is to empower businesses with tailored digital solutions that drive growth and engagement.",
+    stack: [{ name: "React" }, { name: "Node Js" }, { name: "Javascript" }],
+    image: "/assets/work/boomotech/2.png",
     live: "",
-    github: "",
+    github: "https://github.com/farzadsnj/boomoTechReact",
   },
   {
     num: "02",
@@ -143,17 +143,30 @@ const Work = () => {
               {projects.map((project, index) => {
                 return (
                   <SwiperSlide key={index} className="w-full">
+                    {/* Slideshow container */}
                     <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
-                      {/* overlay */}
+                      {/* Overlay */}
                       <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
-                      {/* image */}
-                      <div className="relative w-full h-full">
+
+                      {/* Image and Link */}
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="relative w-full h-full"
+                      >
                         <Image
                           src={project.image}
                           fill
                           className="object-cover"
-                          alt=""
+                          alt={project.title}
                         />
+                      </a>
+
+                      {/* Description Section */}
+                      <div className="absolute bottom-4 left-4 z-20 bg-black/60 text-white px-4 py-2 rounded">
+                        <h3 className="text-lg font-bold">{project.title}</h3>
+                        <p className="text-sm">{project.description}</p>
                       </div>
                     </div>
                   </SwiperSlide>

@@ -1,36 +1,57 @@
 "use client";
 
 import { BsArrowDownRight } from "react-icons/bs";
+import { FaCloud, FaLaptopCode, FaNetworkWired, FaDraftingCompass, FaLightbulb, FaCode } from "react-icons/fa";
 import Link from "next/link";
 
 const services = [
   {
     num: "01",
-    title: "Web Development",
+    title: "Cloud Engineering",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.",
+      "Expert in AWS, Azure, and Windows Server, offering cloud infrastructure setup, optimization, and management solutions.",
     href: "",
+    icon: <FaCloud />,
   },
   {
     num: "02",
-    title: "UI/UX Design",
+    title: "Full-Stack Web Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.",
+      "Building scalable and robust web applications with expertise in front-end and back-end technologies.",
     href: "",
+    icon: <FaLaptopCode />,
   },
   {
     num: "03",
-    title: "Logo Design",
+    title: "Application Development and Testing",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.",
+      "Developing and testing applications using JavaScript, TypeScript, C#, and ensuring quality with Jest.",
     href: "",
+    icon: <FaCode />,
   },
   {
     num: "04",
-    title: "SEO",
+    title: "Technical Support & Network Administration",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.",
+      "Providing IT support, troubleshooting, and network administration solutions, including DNS and DHCP configuration.",
     href: "",
+    icon: <FaNetworkWired />,
+  },
+  {
+    num: "05",
+    title: "Process Optimization & Documentation",
+    description:
+      "Enhancing workflows and creating technical documentation using tools like Jira, VMware, and Wireshark.",
+    href: "",
+    icon: <FaDraftingCompass />,
+  },
+  {
+    num: "06",
+    title: "Consultation and Research",
+    description:
+      "Delivering strategic insights through SWOT analysis and prompt engineering for business optimization.",
+    href: "",
+    icon: <FaLightbulb />,
   },
 ];
 
@@ -67,7 +88,8 @@ const Services = () => {
                   </Link>
                 </div>
                 {/* title */}
-                <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
+                <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 flex items-center gap-3">
+                  {service.icon}
                   {service.title}
                 </h2>
                 {/* description */}
