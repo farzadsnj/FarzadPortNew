@@ -1,53 +1,56 @@
 "use client";
 
 import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
   FaReact,
-  FaFigma,
+  FaAws,
   FaNodeJs,
+  FaLinux,
+  FaWindows,
+  FaNetworkWired,
+  FaUsersCog,
+  FaLaptopCode,
 } from "react-icons/fa";
-
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import {
+  SiRedux,
+  SiTailwindcss,
+  SiGraphql,
+  SiJavascript,
+  SiTypescript,
+  SiPython,
+  SiDotnet,
+  SiSwagger,
+  SiPostgresql,
+  SiJest,
+  SiMongodb,
+  SiSqlite,
+  SiJira,
+} from "react-icons/si"; // Removed non-existent icons
 
 // about data
 const about = {
   title: "About me",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
+    "I'm a passionate software engineer with expertise in full-stack development skills, cloud engineering, and application optimization. With hands-on experience in technologies like AWS, React.js, ASP.NET, and PKI security, I thrive on crafting innovative, reliable, and user-friendly solutions.",
   info: [
     {
       fieldName: "Name",
-      fieldValue: "Luke Coleman",
+      fieldValue: "Fred Sanjarani",
     },
     {
       fieldName: "Phone",
-      fieldValue: "(+40) 321 654 678",
+      fieldValue: "(+61) 415 479 443",
     },
     {
       fieldName: "Experience",
       fieldValue: "12+ Years",
     },
     {
-      fieldName: "Skype",
-      fieldValue: "luke.01",
-    },
-    {
-      fieldName: "Nationality",
-      fieldValue: "American",
+      fieldName: "GitHub",
+      fieldValue: "Farzadsnj",
     },
     {
       fieldName: "Email",
-      fieldValue: "luke.01@gmail.com",
-    },
-    {
-      fieldName: "Freelance",
-      fieldValue: "Available",
-    },
-    {
-      fieldName: "Languages",
-      fieldValue: "English, Spanish",
+      fieldValue: "fredsanjarani@gmail.com",
     },
   ],
 };
@@ -60,34 +63,24 @@ const experience = {
     "I'm a passionate software engineer with expertise in full-stack development skills, cloud engineering, and application optimization. With hands-on experience in technologies like AWS, React.js, ASP.NET, and PKI security, I thrive on crafting innovative, reliable, and user-friendly solutions.",
   items: [
     {
-      company: "Tech Solutions Inc.",
-      position: "Full Stack Developer",
-      duration: "2022 - Present",
+      company: "Queensland university of technology",
+      position: "Software Engineering Student",
+      duration: "2023 - 2025",
     },
     {
-      company: "Web Design Studio",
-      position: "Front-End Developer Intern",
-      duration: "Summer 2021",
+      company: "Skyline",
+      position: "Front-End Developer",
+      duration: "2019 - 2022",
     },
     {
-      company: "E-commerce Startup",
-      position: "Freelance Web Developer",
-      duration: "2020 - 2021",
+      company: "Parse Bana construction",
+      position: "Network Administrator & IT Support",
+      duration: "2016 - 2019",
     },
     {
-      company: "Tech Academy",
-      position: "Teaching Assistant",
-      duration: "2019 - 2020",
-    },
-    {
-      company: "Digital Agency",
-      position: "UI/UX Designer",
-      duration: "2018 - 2019",
-    },
-    {
-      company: "Software Development Firm",
-      position: "Junior Developer",
-      duration: "2017 - 2018",
+      company: "Torang Graphic Design",
+      position: "Graphic Designer & Web Developer",
+      duration: "2013 - 2016",
     },
   ],
 };
@@ -97,78 +90,59 @@ const education = {
   icon: "/assets/resume/cap.svg",
   title: "My education",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
+    "Equipped with a Master's in Information Technology from QUT, specializing in Software Development and Cloud Engineering, and a Bachelor's in ICT from Zand University, I’ve built a strong foundation in cutting-edge technologies, problem-solving, and innovative design.",
   items: [
     {
-      institution: "Online Course Platform",
-      degree: "Full Stack Web Development Bootcamp",
-      duration: "2023",
+      institution: "QUT - Brisbane",
+      degree: "Master's of IT",
+      duration: "2023 - 2025",
     },
     {
-      institution: "Codecademy",
-      degree: "Front-end Track",
-      duration: "2022",
-    },
-    {
-      institution: "Online Course",
-      degree: "Programming Course",
-      duration: "2020 - 2021",
-    },
-    {
-      institution: "Tech Institute",
-      degree: "Certified Web Developer",
-      duration: "2019",
-    },
-    {
-      institution: "Design School",
-      degree: "Diploma in Graphic Design",
-      duration: "2016 - 2018",
-    },
-    {
-      institution: "Community College",
-      degree: "Associate Degree in Computer Science",
-      duration: "2014 - 2016",
+      institution: "Zand University of Shiraz",
+      degree: "Bachelor's of IT",
+      duration: "2015 - 2018",
     },
   ],
 };
 
-// skills data
+// Skills data
 const skills = {
   title: "My skills",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
+    "Explore my diverse skill set encompassing programming languages, cloud technologies, front-end and back-end development, libraries, and hands-on expertise. Each skill is categorized to highlight my technical versatility and application experiences, showcasing my ability to deliver robust and innovative solutions.",
   skillList: [
+    { icon: <FaReact />, name: "React.js" },
+    { icon: <FaReact />, name: "React Native" },
+    { icon: <SiRedux />, name: "Redux" },
+    { icon: <SiTailwindcss />, name: "Tailwind CSS" },
+    { icon: <SiGraphql />, name: "GraphQL" },
+    { icon: <SiJavascript />, name: "JavaScript" },
+    { icon: <SiTypescript />, name: "TypeScript" },
+    { icon: <SiPython />, name: "Python" },
+    { icon: <FaAws />, name: "AWS" },
+    { icon: <FaNodeJs />, name: "Node.js" },
+    { icon: <SiDotnet />, name: "ASP.NET" },
+    { icon: <SiSwagger />, name: "Swagger" },
+    { icon: <SiPostgresql />, name: "SQL" },
+    { icon: <SiJest />, name: "Jest" },
+    { icon: <FaLinux />, name: "Linux CLI" },
+    { icon: <SiMongodb />, name: "MongoDB" },
+    { icon: <SiSqlite />, name: "SQLite" },
+    { icon: <SiJira />, name: "Jira" },
+    { icon: <FaNetworkWired />, name: "Network Administration" },
+    { icon: <FaUsersCog />, name: "Collaboration" },
+    { icon: <FaLaptopCode />, name: "Problem-Solving" },
     {
-      icon: <FaHtml5 />,
-      name: "html 5",
+      icon: <img src="/assets/skills/azure.svg" alt="Azure Icon" />,
+      name: "Azure",
     },
     {
-      icon: <FaCss3 />,
-      name: "css 3",
+      icon: <img src="/assets/skills/powershell.svg" alt="Azure Icon" />,
+      name: "Powershell",
     },
     {
-      icon: <FaJs />,
-      name: "javascript",
-    },
-    {
-      icon: <FaReact />,
-      name: "react.js",
-    },
-    {
-      icon: <SiNextdotjs />,
-      name: "next.js",
-    },
-    {
-      icon: <SiTailwindcss />,
-      name: "tailwind.css",
-    },
-    {
-      icon: <FaNodeJs />,
-      name: "node.js",
-    },
-    {
-      icon: <FaFigma />,
-      name: "figma",
+      icon: <img src="/assets/skills/jwt.svg" alt="Azure Icon" />,
+      name: "JWT",
     },
   ],
 };
@@ -276,32 +250,192 @@ const Resume = () => {
             {/* skills */}
             <TabsContent value="skills" className="w-full h-full">
               <div className="flex flex-col gap-[30px]">
+                {/* Title and Description */}
                 <div className="flex flex-col gap-[30px] text-center xl:text-left">
                   <h3 className="text-4xl font-bold">{skills.title}</h3>
                   <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                     {skills.description}
                   </p>
                 </div>
-                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
-                  {skills.skillList.map((skill, index) => {
-                    return (
-                      <li key={index}>
-                        <TooltipProvider delayDuration={100}>
-                          <Tooltip>
-                            <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                              <div className="text-6xl group-hover:text-accent transition-all duration-300">
-                                {skill.icon}
-                              </div>
-                            </TooltipTrigger>
-                            <TooltipContent>
-                              <p className="capitalize">{skill.name}</p>
-                            </TooltipContent>
-                          </Tooltip>
-                        </TooltipProvider>
+
+                {/* Languages */}
+                <div className="mb-8">
+                  <h4 className="text-2xl font-bold mb-2">Languages</h4>
+                  <hr className="border-t border-gray-600 mb-4" />
+                  <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
+                    {[
+                      { icon: <SiJavascript />, name: "JavaScript" },
+                      { icon: <SiTypescript />, name: "TypeScript" },
+                      { icon: <SiPython />, name: "Python" },
+                      { icon: <SiDotnet />, name: "C#" },
+                      { icon: <SiPostgresql />, name: "SQL" },
+                    ].map((skill, index) => (
+                      <li
+                        key={index}
+                        className="flex flex-col items-center justify-center bg-[#232329] rounded-xl p-4 text-center h-[150px]"
+                      >
+                        <div className="text-6xl">{skill.icon}</div>
+                        <p className="text-white text-lg font-semibold mt-2">
+                          {skill.name}
+                        </p>
                       </li>
-                    );
-                  })}
-                </ul>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Cloud Technologies */}
+                <div className="mb-8">
+                  <h4 className="text-2xl font-bold mb-2">
+                    Cloud Technologies
+                  </h4>
+                  <hr className="border-t border-gray-600 mb-4" />
+                  <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
+                    {[
+                      { icon: <FaAws />, name: "AWS" },
+                      {
+                        icon: (
+                          <img
+                            src="/assets/skills/azure.svg"
+                            alt="Azure Icon"
+                          />
+                        ),
+                        name: "Azure",
+                      },
+                      { icon: <FaWindows />, name: "Windows Server" },
+                    ].map((skill, index) => (
+                      <li
+                        key={index}
+                        className="flex flex-col items-center justify-center bg-[#232329] rounded-xl p-4 text-center h-[150px]"
+                      >
+                        <div className="text-6xl">{skill.icon}</div>
+                        <p className="text-white text-lg font-semibold mt-2">
+                          {skill.name}
+                        </p>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Hands-On Skills */}
+                <div className="mb-8">
+                  <h4 className="text-2xl font-bold mb-2">Hands-On Skills</h4>
+                  <hr className="border-t border-gray-600 mb-4" />
+                  <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
+                    {[
+                      { icon: <FaLinux />, name: "Linux CLI" },
+                      { icon: <SiMongodb />, name: "MongoDB" },
+                      { icon: <FaLaptopCode />, name: "Problem-Solving" },
+                      { icon: <FaNetworkWired />, name: "Technical Support" },
+                    ].map((skill, index) => (
+                      <li
+                        key={index}
+                        className="flex flex-col items-center justify-center bg-[#232329] rounded-xl p-4 text-center h-[150px]"
+                      >
+                        <div className="text-6xl">{skill.icon}</div>
+                        <p className="text-white text-lg font-semibold mt-2">
+                          {skill.name}
+                        </p>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Other Skills */}
+                <div className="mb-8">
+                  <h4 className="text-2xl font-bold mb-2">Other Skills</h4>
+                  <hr className="border-t border-gray-600 mb-4" />
+                  <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
+                    {[
+                      { icon: <FaUsersCog />, name: "Prompt Engineering" },
+                      { icon: <FaUsersCog />, name: "SWOT Analysis" },
+                    ].map((skill, index) => (
+                      <li
+                        key={index}
+                        className="flex flex-col items-center justify-center bg-[#232329] rounded-xl p-4 text-center h-[150px]"
+                      >
+                        <div className="text-6xl">{skill.icon}</div>
+                        <p className="text-white text-lg font-semibold mt-2">
+                          {skill.name}
+                        </p>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* App Experiences */}
+                <div className="mb-8">
+                  <h4 className="text-2xl font-bold mb-2">App Experiences</h4>
+                  <hr className="border-t border-gray-600 mb-4" />
+                  <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
+                    {[
+                      {
+                        icon: (
+                          <img src="/assets/skills/vmware.svg" alt="VMware" />
+                        ),
+                        name: "VMware",
+                      },
+                      {
+                        icon: (
+                          <img
+                            src="/assets/skills/wireshark.svg"
+                            alt="Wireshark"
+                          />
+                        ),
+                        name: "Wireshark",
+                      },
+                      {
+                        icon: <img src="/assets/skills/expo.svg" alt="Expo" />,
+                        name: "Expo",
+                      },
+                      {
+                        icon: (
+                          <img
+                            src="/assets/skills/android-studio.svg"
+                            alt="Android Studio"
+                          />
+                        ),
+                        name: "Android Studio",
+                      },
+                      {
+                        icon: (
+                          <img
+                            src="/assets/skills/microsoft-365.svg"
+                            alt="Office 360"
+                          />
+                        ),
+                        name: "Office 360",
+                      },
+                      {
+                        icon: (
+                          <img
+                            src="/assets/skills/photoshop.svg"
+                            alt="Adobe Photoshop"
+                          />
+                        ),
+                        name: "Photoshop",
+                      },
+                      {
+                        icon: (
+                          <img
+                            src="/assets/skills/illustrator.svg"
+                            alt="Adobe Illustrator"
+                          />
+                        ),
+                        name: "Illustrator",
+                      },
+                    ].map((skill, index) => (
+                      <li
+                        key={index}
+                        className="flex flex-col items-center justify-center bg-[#232329] rounded-xl p-4 text-center h-[150px]"
+                      >
+                        <div className="text-6xl">{skill.icon}</div>
+                        <p className="text-white text-lg font-semibold mt-2">
+                          {skill.name}
+                        </p>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </TabsContent>
 
