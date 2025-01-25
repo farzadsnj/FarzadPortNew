@@ -25,7 +25,7 @@ const projects = [
     category: "frontend",
     title: "BoomoTech software agency",
     description:
-      "BoomoTech: BoomoTech specializes in creating innovative websites, managing social media, and optimizing online presence through Google Ads and other digital services. Our mission is to empower businesses with tailored digital solutions that drive growth and engagement.",
+      "BoomoTech specializes in creating innovative websites, managing social media, and optimizing online presence through Google Ads and other digital services. Our mission is to empower businesses with tailored digital solutions that drive growth and engagement.",
     stack: [{ name: "React" }, { name: "Node Js" }, { name: "Javascript" }],
     image: "/assets/work/boomotech/2.png",
     live: "",
@@ -34,13 +34,13 @@ const projects = [
   {
     num: "02",
     category: "fullstack",
-    title: "project 2",
+    title: "React Dashboard Application",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }, { name: "Node.js" }],
-    image: "/assets/work/thumb2.png",
+      "Developed a responsive React-based dashboard application designed to integrate seamlessly with frontend systems for data control and management. Features include interactive charts (bar, pie, line, and geographical visualizations) powered by JavaScript libraries, a side menu for easy navigation, and functionalities such as team management, calendar scheduling, invoice tracking, and FAQs. This project demonstrates expertise in creating dynamic and user-friendly interfaces to display and manage complex data.",
+    stack: [{ name: "React.js" }, { name: "Chart.js / D3.js" }, { name: "Node.js" }],
+    image: "/assets/work/dashboard.jpg",
     live: "",
-    github: "",
+    github: "https://github.com/farzadsnj/dashboard-app",
   },
   {
     num: "03",
