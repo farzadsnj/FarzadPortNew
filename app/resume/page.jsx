@@ -133,15 +133,15 @@ const skills = {
     { icon: <FaUsersCog />, name: "Collaboration" },
     { icon: <FaLaptopCode />, name: "Problem-Solving" },
     {
-      icon: <img src="/assets/skills/azure.svg" alt="Azure Icon" />,
+      icon: <image src="/assets/skills/azure.svg" alt="Azure Icon" />,
       name: "Azure",
     },
     {
-      icon: <img src="/assets/skills/powershell.svg" alt="Azure Icon" />,
+      icon: <image src="/assets/skills/powershell.svg" alt="Azure Icon" />,
       name: "Powershell",
     },
     {
-      icon: <img src="/assets/skills/jwt.svg" alt="Azure Icon" />,
+      icon: <image src="/assets/skills/jwt.svg" alt="Azure Icon" />,
       name: "JWT",
     },
   ],
@@ -294,7 +294,7 @@ const Resume = () => {
                       { icon: <FaAws />, name: "AWS" },
                       {
                         icon: (
-                          <img
+                          <image
                             src="/assets/skills/azure.svg"
                             alt="Azure Icon"
                           />
@@ -370,13 +370,13 @@ const Resume = () => {
                     {[
                       {
                         icon: (
-                          <img src="/assets/skills/vmware.svg" alt="VMware" />
+                          <image src="/assets/skills/vmware.svg" alt="VMware" />
                         ),
                         name: "VMware",
                       },
                       {
                         icon: (
-                          <img
+                          <image
                             src="/assets/skills/wireshark.svg"
                             alt="Wireshark"
                           />
@@ -384,12 +384,12 @@ const Resume = () => {
                         name: "Wireshark",
                       },
                       {
-                        icon: <img src="/assets/skills/expo.svg" alt="Expo" />,
+                        icon: <image src="/assets/skills/expo.svg" alt="Expo" />,
                         name: "Expo",
                       },
                       {
                         icon: (
-                          <img
+                          <image
                             src="/assets/skills/android-studio.svg"
                             alt="Android Studio"
                           />
@@ -398,7 +398,7 @@ const Resume = () => {
                       },
                       {
                         icon: (
-                          <img
+                          <image
                             src="/assets/skills/microsoft-365.svg"
                             alt="Office 360"
                           />
@@ -407,7 +407,7 @@ const Resume = () => {
                       },
                       {
                         icon: (
-                          <img
+                          <image
                             src="/assets/skills/photoshop.svg"
                             alt="Adobe Photoshop"
                           />
@@ -416,7 +416,7 @@ const Resume = () => {
                       },
                       {
                         icon: (
-                          <img
+                          <image
                             src="/assets/skills/illustrator.svg"
                             alt="Adobe Illustrator"
                           />
